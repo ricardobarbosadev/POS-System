@@ -4,12 +4,12 @@ API developed as the final challenge of the Cubos Academy back-end software deve
 
 ## 📜 Summary
 
-1. [Detalhes do projeto](https://github.com/ricardobarbosadev/backend-challenge-module-05-sistema-pdv-b2b-ifood-t04#1--project-details)
+1. [Project details](https://github.com/ricardobarbosadev/backend-challenge-module-05-sistema-pdv-b2b-ifood-t04#1--project-details)
 2. [Deploy](https://github.com/ricardobarbosadev/backend-challenge-module-05-sistema-pdv-b2b-ifood-t04#2--deploy)
-3. [Para rodar o projeto](https://github.com/ricardobarbosadev/backend-challenge-module-05-sistema-pdv-b2b-ifood-t04#3--to-run-the-project-in-a-development-environment)
-4. [Documentação](https://github.com/ricardobarbosadev/backend-challenge-module-05-sistema-pdv-b2b-ifood-t04#4--documentation)
-5. [Tecnologias usadas](https://github.com/ricardobarbosadev/backend-challenge-module-05-sistema-pdv-b2b-ifood-t04#5--technologies-used)
-6. [Autor](https://github.com/ricardobarbosadev/backend-challenge-module-05-sistema-pdv-b2b-ifood-t04#6--authors)
+3. [To run the project in a development environment](https://github.com/ricardobarbosadev/backend-challenge-module-05-sistema-pdv-b2b-ifood-t04#3--to-run-the-project-in-a-development-environment)
+4. [Documentation](https://github.com/ricardobarbosadev/backend-challenge-module-05-sistema-pdv-b2b-ifood-t04#4--documentation)
+5. [Technologies used](https://github.com/ricardobarbosadev/backend-challenge-module-05-sistema-pdv-b2b-ifood-t04#5--technologies-used)
+6. [Authors](https://github.com/ricardobarbosadev/backend-challenge-module-05-sistema-pdv-b2b-ifood-t04#6--authors)
 
 ## 1. 🔍 Project details
 
