@@ -1,77 +1,77 @@
-# API PDV-Cubos
+# API POS-Cubos
 
-API desenvolvida como desafio final do curso de desenvolvimento de software back-end da Cubos Academy. Trata-se de um sistema PDV (Ponto de Venda).
+API developed as the final challenge of the Cubos Academy back-end software development course. It is a POS (Point of Sale) system.
 
-## 📜 Sumário
+## 📜 Summary
 
-1. [Detalhes do projeto](https://github.com/iadevmatth/desafio-backend-modulo-05-sistema-pdv-b2b-ifood-t04#1--detalhes-do-projeto)
-2. [Deploy](https://github.com/iadevmatth/desafio-backend-modulo-05-sistema-pdv-b2b-ifood-t04#2--deploy)
-3. [Para rodar o projeto](https://github.com/iadevmatth/desafio-backend-modulo-05-sistema-pdv-b2b-ifood-t04#3--para-rodar-o-projeto)
-4. [Documentação](https://github.com/iadevmatth/desafio-backend-modulo-05-sistema-pdv-b2b-ifood-t04#4--documenta%C3%A7%C3%A3o)
-5. [Tecnologias usadas](https://github.com/iadevmatth/desafio-backend-modulo-05-sistema-pdv-b2b-ifood-t04#5--tecnologias-usadas)
-6. [Autor](https://github.com/iadevmatth/desafio-backend-modulo-05-sistema-pdv-b2b-ifood-t04#6--autores)
+1. [Detalhes do projeto](https://github.com/ricardobarbosadev/backend-challenge-module-05-sistema-pdv-b2b-ifood-t04#1--project-details)
+2. [Deploy](https://github.com/ricardobarbosadev/backend-challenge-module-05-sistema-pdv-b2b-ifood-t04#2--deploy)
+3. [Para rodar o projeto](https://github.com/ricardobarbosadev/backend-challenge-module-05-sistema-pdv-b2b-ifood-t04#3--to-run-the-project-in-a-development-environment)
+4. [Documentação](https://github.com/ricardobarbosadev/backend-challenge-module-05-sistema-pdv-b2b-ifood-t04#4--documentation)
+5. [Tecnologias usadas](https://github.com/ricardobarbosadev/backend-challenge-module-05-sistema-pdv-b2b-ifood-t04#5--technologies-used)
+6. [Autor](https://github.com/ricardobarbosadev/backend-challenge-module-05-sistema-pdv-b2b-ifood-t04#6--authors)
 
-## 1. 🔍 Detalhes do projeto
+## 1. 🔍 Project details
 
-A API PDV_Cubos tem como objetivo controlar as vendas de um comércio fictício. Foi realizado academicamente durante curso de desenvolvimento de software back-end da Cubos Academy.
+The POS_Cubos API aims to control the sales of a fictitious store. It was carried out academically during the back-end software development course at Cubos Academy.
 
-#### Cenário:
+#### Scenario:
 
-- O sistema permite o cadastro de usuário, com validação de informações;
-- O sistema permite apenas as requisições de cadastro de usuário, login e listagem de categorias sem autenticação por meio de JWT;
-- Com o usuário logado, o sistema permite a edição e detalhmento das informações do usuário, criação, edição, detalhamento e listagem de clientes, criação, edição, detalhamento, deleção e listagem de produtos, criação e listagem de pedidos;
-- O sistema permite a inclusão de imagens de produtos, que são armazenados em um serviço de armazenamento na nuvem;
-- O sistema decrementa automaticamente quantidade de itens no estoque de acordo com o pedido realizado;
-- O sistema encaminha e-mail ao cliente em casa de pedido efetuado com sucesso;
+- The system allows user registration, with information validation;
+- The system only allows user registration, login and category listing requests without authentication through JWT;
+- With the user logged in, the system allows editing and detailing of user information, creation, editing, detailing and listing of customers, creation, editing, detailing, deletion and listing of products, creation and listing of orders;
+- The system allows the inclusion of product images, which are stored in a cloud storage service;
+- The system automatically decreases the quantity of items in stock according to the order placed;
+- The system sends an email to the customer upon successful order placement;
 
 ## 2. ✅ Deploy
 
-A API está rodando no servidor da Cyclic: [Link do deploy](https://neyvelopers.cyclic.app/).
+The API is running on the Cyclic server: [Deploy link](https://neyvelopers.cyclic.app/).
 
-Para utilizá-la, basta seguir a documentação presente neste conteúdo.
+To use it, simply follow the documentation present in this content.
 
-## 3. 🔌 Para rodar o projeto em ambiente de desenvolvimento
+## 3. 🔌 To run the project in a development environment
 
-1. Instale as dependências necessárias para rodar a API (relacionadas no package.json):
+1. Install the necessary dependencies to run the API (listed in package.json):
 
    ```
    npm install
    ```
 
-2. A API utiliza o PostgreSQL como banco de dados rodando em um servidor do [ElephantSQL](https://www.elephantsql.com/). A API também faz uso de um bucket no [BackBlaze](https://www.backblaze.com/) para armazenamento de imagens, bem como de um serviço do [Brevo](https://www.brevo.com/pt/) para servidor SMTP.
+2. The API uses PostgreSQL as a database running on an [ElephantSQL](https://www.elephantsql.com/) server. The API also makes use of a bucket on [BackBlaze](https://www.backblaze.com/) for storing images, as well as a service on [Brevo](https://www.brevo.com/pt /) for SMTP server.
 
-3. Dessa forma, se faz necessário criar os respectivos serviços para API consumir e preencher o arquivo `.env` utilizando o `.env.example` de exemplo para os nomes das variáveis de ambiente.
+3. Therefore, it is necessary to create the respective services for the API to consume and fill in the `.env` file using the `.env.example` example for the names of the environment variables.
 
-4. Rode a aplicação que o sistema já irá criar as tabelas automaticamente no banco de dados, deixando-as prontas para uso.
+4. Run the application and the system will automatically create the tables in the database, leaving them ready for use.
 
-5. Você precisará de uma ferramenta de teste de requisições como o [Insomnia](https://insomnia.rest/), devendo seguir as orientações da documentação abaixo para utilizar a API.
+5. You will need a request testing tool like [Insomnia](https://insomnia.rest/), and you must follow the guidance in the documentation below to use the API.
 
-6. Você pode rodar os testes automatizados criados com Jest:
+6. You can run automated tests created with Jest:
    ```
    npm run test
    ```
 
-## 4. 📖 Documentação
+## 4. 📖 Documentation
 
 ### Endpoints
 
-**Login** - Autenticação de usuário <br/>
+**Login** - User authentication <br/>
 
 <details>
 <summary><b>POST login</b></summary>
 
-Logar com um usuário por meio de `email` e `password`. Retorna um token JWT para ser utilizado nas requisições.
+Log in with a user using `email` and `password`. Returns a JWT token to be used in requests.
 
 **Request**
 
-| **Nome** | **Obrigatório** | **Tipo** | **Descrição**     |
+| **Name** | **Mandatory**   | **Type** | **Description**   |
 | :------- | :-------------- | :------- | :---------------- |
-| email    | sim             | `string` | E-mail do usuário |
-| password | sim             | `string` | Senha do usuário  |
+| email    | yes             | `string` | User email        |
+| senha    | yes             | `string` | User password     |
 
-> **_NOTA:_** Não é necessário enviar Token JWT via Authorization Header.
+> **_NOTE:_** No need to send JWT Token via Authorization Header
 
-Exemplo de requisição:
+Requisition Example:
 
 ```json
 {
@@ -82,7 +82,7 @@ Exemplo de requisição:
 
 **Response**
 
-Sucesso
+Success
 
 ```json
 {
@@ -91,7 +91,7 @@ Sucesso
 }
 ```
 
-`status: 200` <br /><br /> Erro comum
+`status: 200` <br /><br /> Common errors
 
 ```json
 {
@@ -104,24 +104,24 @@ Sucesso
 </details>
 <br/>
 
-**Usuário** - Criação de um novo usuário, edição de um usuário e detalhamento do usuário <br/>
+**User** - Creating a new user, editing a user, and drilling down on the user <br/>
 
 <details>
 <summary><b>POST usuario</b></summary>
 
-Criar um usuário para poder utilizar a API e jogar D&D.
+Create a user to be able to use the API.
 
 **Request**
 
-| **Nome** | **Obrigatório** | **Tipo** | **Descrição**    |
+| **Name** | **Mandatory**   | **Type** | **Description**  |
 | :------- | :-------------- | :------- | :--------------- |
-| nome     | sim             | `string` | Nome do usuário  |
-| email    | sim             | `string` | Email do usuário |
-| senha    | sim             | `string` | Senha do usuário |
+| nome     | yes             | `string` | User name        |
+| email    | yes             | `string` | User email       |
+| senha    | yes             | `string` | User password    |
 
-> **_NOTA:_** Não é necessário enviar Token JWT via Authorization Header.
+> **NOTE:_** No need to send JWT Token via Authorization Header.
 
-Exemplo de requisição:
+Request example:
 
 ```json
 {
@@ -133,17 +133,17 @@ Exemplo de requisição:
 
 **Response**
 
-Sucesso
+Success
 
 ```json
 {
   "id": 1,
-  "name": "Fulano",
+  "nome": "Fulano",
   "email": "fulano@email.com"
 }
 ```
 
-`status: 201` <br /><br /> Erros comuns
+`status: 201` <br /><br /> Common errors
 
 ```json
 {
@@ -155,7 +155,7 @@ Sucesso
 
 ```json
 {
-  "message": "The password must at least 6 characters"
+  "message": "The password must be at least 6 characters"
 }
 ```
 
@@ -166,31 +166,31 @@ Sucesso
 <details>
 <summary><b>PUT usuario</b></summary>
 
-Editar um usuário. Apenas nome e e-mail podem ser editados (ou apenas um dos dois).
+Edit a user. Only name and email can be edited (or just one of the two).
 
 **Request**
 
-| **Nome** | **Obrigatório** | **Tipo** | **Descrição**    |
+| **Name** | **Mandatory**   | **Type** | **Description**  |
 | :------- | :-------------- | :------- | :--------------- |
-| nome     | sim             | `string` | Nome do usuário  |
-| email    | sim             | `string` | Email do usuário |
-| senha    | sim             | `string` | Senha do usuário |
+| nome     | yes             | `string` | User name        |
+| email    | yes             | `string` | User email       |
+| password | yes             | `string` | User password    |
 
-> **_NOTA:_** É necessário enviar Token JWT via Authorization Header.
+> **_NOTA:_** It is necessary to send JWT Token via Authorization Header.
 
-Exemplo de requisição:
+Request example:
 
 ```json
 {
-  "name": "Fulano Editado",
+  "nome": "Fulano Editado",
   "email": "fulano.editado@email.com",
-  "password": "password"
+  "senha": "password"
 }
 ```
 
 **Response**
 
-Sucesso <br/> `no body returned for response` <br/> `status: 204` <br/><br/> Erros comuns
+Success <br/> `no body returned for response` <br/> `status: 204` <br/><br/> Common errors
 
 ```json
 {
@@ -205,27 +205,27 @@ Sucesso <br/> `no body returned for response` <br/> `status: 204` <br/><br/> Err
 <details>
 <summary><b>GET usuario</b></summary>
 
-Detalhar um usuário. O `id` é enviado automaticamente com o token.
+Detail a user. The `id` is automatically sent with the token..
 
 **Request**
 
-`Não é necessário enviar dados na requisição`
+`It is not necessary to send data in the request`
 
-> **_NOTA:_** É necessário enviar Token JWT via Authorization Header.
+> **Note:_** It is necessary to send JWT Token via Authorization Header.
 
 **Response**
 
-Sucesso
+Success
 
 ```json
 {
   "id": 1,
-  "name": "Fulano",
+  "nome": "Fulano",
   "email": "fulano@email.com"
 }
 ```
 
-`status: 200` <br /> Erros comuns
+`status: 200` <br /> Common Errors
 
 ```json
 {
@@ -238,22 +238,22 @@ Sucesso
 </details>
 <br/>
 
-**Categoria** - Listagem de categorias dos produtos <br/>
+**Category** - List of product categories <br/>
 
 <details>
 <summary><b>GET categoria</b></summary>
 
-Listar categorias.
+List categories.
 
 **Request**
 
-`Não é necessário enviar dados na requisição`
+`It is not necessary to send data in the request`
 
-> **_NOTA:_** Não é necessário enviar Token JWT via Authorization Header.
+> **NOTE:_** It is not necessary to send JWT Token via Authorization Header.
 
 **Response**
 
-Sucesso
+Success
 
 ```json
 [
@@ -274,7 +274,7 @@ Sucesso
 
 `status: 200`
 
-Sucesso sem retorno
+Success without return
 
 ```json
 []
@@ -285,30 +285,30 @@ Sucesso sem retorno
 </details>
 <br/>
 
-**Cliente** - Criação de um novo cliente, edição de um cliente, listagem de clientes e detalhamento de um cliente <br/>
+**Customer** - Creating a new customer, editing a customer, listing customers and detailing a customer <br/>
 
 <details>
 <summary><b>POST cliente</b></summary>
 
-Criar um cliente.
+Creating a customer.
 
 **Request**
 
-| **Nome** | **Obrigatório** | **Tipo** | **Descrição**                 |
+| **Name** | **Mandatory**   | **Type** | **Description**               |
 | :------- | :-------------- | :------- | :---------------------------- |
-| nome     | sim             | `string` | Nome do usuário               |
-| email    | sim             | `string` | Email do usuário              |
-| cpf      | sim             | `string` | CPF do usuário                |
-| cep      | não             | `string` | CEP do endereço do usuário    |
-| rua      | não             | `string` | Rua do endereço do usuário    |
-| numero   | não             | `string` | Número do endereço do usuário |
-| bairro   | não             | `string` | Bairro do endereço do usuário |
-| cidade   | não             | `string` | Cidade do endereço do usuário |
-| estado   | não             | `string` | Estado do endereço do usuário |
+| nome     | yes             | `string` | User name                     |
+| email    | yes             | `string` | User Email                    |
+| cpf      | yes             | `string` | User CPF                      |
+| cep      | no              | `string` | User's adress  cep            |
+| rua      | no              | `string` | User's adress  street         |
+| numero   | no              | `string` | User's adress number          |
+| bairro   | no              | `string` | User's adress neighborhood    |
+| cidade   | no              | `string` | User's adress city            |
+| estado   | no              | `string` | User's adress state           |
 
-> **_NOTA:_** É necessário enviar Token JWT via Authorization Header.
+> **NOTE:_** It is necessary to send JWT Token via Authorization Header.
 
-Exemplo de requisição:
+Request example:
 
 ```json
 {
@@ -343,7 +343,7 @@ Sucesso
 }
 ```
 
-`status: 201` <br /><br /> Erros comuns
+`status: 201` <br /><br /> Common Errors
 
 ```json
 {
@@ -362,13 +362,13 @@ Listar clientes.
 
 **Request**
 
-`Não é necessário enviar dados na requisição`
+`It is not necessary to send data in the request`
 
-> **_NOTA:_** É necessário enviar Token JWT via Authorization Header.
+> **_NOTA:_** It is necessary to send JWT Token via Authorization Header.
 
 **Response**
 
-Sucesso
+Success
 
 ```json
 [
@@ -401,7 +401,7 @@ Sucesso
 
 `status: 200`
 
-Sucesso sem retorno
+Success without return
 
 ```json
 []
@@ -414,19 +414,19 @@ Sucesso sem retorno
 <details>
 <summary><b>GET cliente-id</b></summary>
 
-Detalhar um personagem. O `id` deve ser enviado na url.
+Detail a customer. The `id` must be sent in the url.
 
 **Request**
 
-| **Nome** | **Obrigatório** | **Tipo** | **Descrição**                    |
+| **Name** | **Mandatory**   | **Type** | **Description**                  |
 | :------- | :-------------- | :------- | :------------------------------- |
-| id       | sim             | `number` | **Enviar via parâmetro de rota** |
+| id       | yes             | `number` | **Send via route parameter** |
 
-> **_NOTA:_** É necessário enviar Token JWT via Authorization Header.
+> **_NOTE:_** It is necessary to send JWT Token via Authorization Header.
 
 **Response**
 
-Sucesso
+Success
 
 ```json
 {
@@ -445,7 +445,7 @@ Sucesso
 
 `status: 200`
 
-Erros comuns
+Common Errors
 
 ```json
 {
@@ -460,26 +460,26 @@ Erros comuns
 <details>
 <summary><b>PUT cliente-id</b></summary>
 
-Alterar os dados do cliente. O `id` deve ser enviado na url.
+Change customer data. The `id` must be sent in the url.
 
 **Request**
 
-| **Nome** | **Obrigatório** | **Tipo** | **Descrição**                    |
+| **Name** | **Mandatory**   | **Type** | **Description**                  |
 | :------- | :-------------- | :------- | :------------------------------- |
-| id       | sim             | `number` | **Enviar via parâmetro de rota** |
-| nome     | sim             | `string` | Nome do usuário                  |
-| email    | sim             | `string` | Email do usuário                 |
-| cpf      | sim             | `string` | CPF do usuário                   |
-| cep      | não             | `string` | CEP do endereço do usuário       |
-| rua      | não             | `string` | Rua do endereço do usuário       |
-| numero   | não             | `string` | Número do endereço do usuário    |
-| bairro   | não             | `string` | Bairro do endereço do usuário    |
-| cidade   | não             | `string` | Cidade do endereço do usuário    |
-| estado   | não             | `string` | Estado do endereço do usuário    |
+| id       | yes             | `number` | **Send via route parameter** |
+| nome     | yes             | `string` | User name                        |
+| email    | yes             | `string` | Email do User                    |
+| cpf      | yes             | `string` | User CPF                         |
+| cep      | no              | `string` | User's adress  cep               |
+| rua      | no              | `string` | User's adress  street            |
+| numero   | no              | `string` | User's adress number             |
+| bairro   | no              | `string` | User's adress neighborhood       |
+| cidade   | no              | `string` | User's adress city               |
+| estado   | no              | `string` | User's adress state              |
 
-> **_NOTA:_** É necessário enviar Token JWT via Authorization Header.
+> **_NOTA:_** It is necessary to send JWT Token via Authorization Header.
 
-Exemplo de requisição:
+Request example:
 
 ```json
 {
@@ -499,7 +499,7 @@ Exemplo de requisição:
 
 Sucesso <br/> `no body returned for response` <br/> `status: 204` <br/><br/>
 
-Erros comuns
+Common Errors
 
 ```json
 {
@@ -528,7 +528,7 @@ Erros comuns
 </details>
 <br/>
 
-**Produto** - Criação de um novo produto, edição de um produto, listagem de produtos, deleção de um produto e detalhamento de um produto <br/>
+**Product** - Creating a new product, editing a product, listing products, deleting a product and detailing a product <br/>
 
 <details>
 <summary><b>POST produto</b></summary>
@@ -537,19 +537,19 @@ Criar um produto.
 
 **Request**
 
-| **Nome**           | **Obrigatório** | **Tipo** | **Descrição**                  |
+| **Name**           | **Mandatory**   | **Type** | **Description**                |
 | :----------------- | :-------------- | :------- | :----------------------------- |
-| descricao          | sim             | `string` | Descrição do produto           |
-| quantidade_estoque | sim             | `number` | Quantidade de itens no estoque |
-| valor              | sim             | `number` | Valor do produto (em centavos) |
-| categoria_id       | sim             | `number` | Id da categoria do produto     |
-| produto_imagem     | não             | `file`   | Arquivo de imagem do produto   |
+| descricao          | yes             | `string` | Product Description            |
+| quantidade_estoque | yes             | `number` | Quantity of items in stock     |
+| valor              | yes             | `number` | Product value (in cents)       |
+| categoria_id       | yes             | `number` | Product category id            |
+| produto_imagem     | no              | `file`   | Product image file             |
 
-> **_NOTA:_** É necessário enviar Token JWT via Authorization Header.
+> **_NOTE:_** It is necessary to send JWT Token via Authorization Header.
 
 **Response**
 
-Sucesso
+Success
 
 ```json
 {
@@ -562,7 +562,7 @@ Sucesso
 }
 ```
 
-`status: 201` <br /><br /> Erros comuns
+`status: 201` <br /><br /> Common Errors
 
 ```json
 {
@@ -585,23 +585,23 @@ Sucesso
 <details>
 <summary><b>GET produto</b></summary>
 
-Listar produtos. Pode ser passado um parâmetro query `categoria_id` para listar apenas os produtos de uma categoria específica.
+List products. A query parameter `categoria_id` can be passed to list only products from a specific category..
 
 **Request**
 
-| **Nome**     | **Obrigatório** | **Tipo** | **Descrição**                             |
+| **Name**     | **Mandatory**   | **Type** | **Description**                           |
 | :----------- | :-------------- | :------- | :---------------------------------------- |
-| categoria_id | não             | `number` | **Enviar via parâmetro de query na rota** |
+| categoria_id | no              | `number` | **Send via query parameter in the route** |
 
-> **_NOTA:_** É necessário enviar Token JWT via Authorization Header.
+> **_NOTE:_** It is necessary to send JWT Token via Authorization Header.
 
-Exemplo de requisição:
+Request example:
 
 `url/produto?categoria_id=1`
 
 **Response**
 
-Sucesso
+Success
 
 ```json
 [
@@ -626,7 +626,7 @@ Sucesso
 
 `status: 200`
 
-Sucesso sem retorno
+Success without return
 
 ```json
 []
@@ -639,19 +639,19 @@ Sucesso sem retorno
 <details>
 <summary><b>GET produto-id</b></summary>
 
-Detalhar um produto. O `id` deve ser enviado na url.
+Detail a product. The `id` must be sent in the url.
 
 **Request**
 
-| **Nome** | **Obrigatório** | **Tipo** | **Descrição**                    |
+| **Nome** | **Mandatory**   | **Type** | **Description**                    |
 | :------- | :-------------- | :------- | :------------------------------- |
-| id       | sim             | `number` | **Enviar via parâmetro de rota** |
+| id       | yes             | `number` | **Send via route parameter** |
 
-> **_NOTA:_** É necessário enviar Token JWT via Authorization Header.
+> **_NOTE:_** It is necessary to send JWT Token via Authorization Header.
 
 **Response**
 
-Sucesso
+Success
 
 ```json
 {
@@ -665,7 +665,7 @@ Sucesso
 
 `status: 200`
 
-Erros comuns
+Common Errors
 
 ```json
 {
@@ -680,26 +680,26 @@ Erros comuns
 <details>
 <summary><b>PUT produto-id</b></summary>
 
-Alterar os dados do produto. O `id` deve ser enviado na url.
+Change product data. The `id` must be sent in the url.
 
 **Request**
 
-| **Nome**           | **Obrigatório** | **Tipo** | **Descrição**                    |
+| **Name**           | **Mandatory**   | **Type** | **Description**                  |
 | :----------------- | :-------------- | :------- | :------------------------------- |
-| id                 | sim             | `number` | **Enviar via parâmetro de rota** |
-| descricao          | sim             | `string` | Descrição do produto             |
-| quantidade_estoque | sim             | `number` | Quantidade de itens no estoque   |
-| valor              | sim             | `number` | Valor do produto (em centavos)   |
-| categoria_id       | sim             | `number` | Id da categoria do produto       |
-| produto_imagem     | não             | `file`   | Arquivo de imagem do produto     |
+| id                 | yes             | `number` | **Send via route parameter**     |
+| descricao          | yes             | `string` | Product Description              |
+| quantidade_estoque | yes             | `number` | Quantity of items in stock       |
+| valor              | yes             | `number` | Product value (in cents)         |
+| categoria_id       | yes             | `number` | Product category id              |
+| produto_imagem     | no              | `file`   | Product image file               |
 
-> **_NOTA:_** É necessário enviar Token JWT via Authorization Header.
+> **_NOTE:_** It is necessary to send JWT Token via Authorization Header.
 
 **Response**
 
 Sucesso <br/> `no body returned for response` <br/> `status: 204` <br/><br/>
 
-Erros comuns
+Common Errors
 
 ```json
 {
@@ -730,22 +730,22 @@ Erros comuns
 <details>
 <summary><b>DELETE produto-id</b></summary>
 
-Deletar um produto. O `id` deve ser enviado na url.
+Delete a product. The `id` must be sent in the url.
 
 **Request**
 
-| **Nome** | **Obrigatório** | **Tipo** | **Descrição**                    |
+| **Name** | **Mandatory**   | **Type** | **Description**                  |
 | :------- | :-------------- | :------- | :------------------------------- |
-| id       | sim             | `number` | **Enviar via parâmetro de rota** |
+| id       | yes             | `number` | **Send via route parameter**     |
 
-> **_NOTA:_** É necessário enviar Token JWT via Authorization Header.
+> **_NOTE:_** It is necessary to send JWT Token via Authorization Header.
 
 **Response**
 
-Sucesso  
+Success
 `no body returned for response` <br/> `status: 204` <br/>
 
-Erros comuns
+Common Errors
 
 ```json
 {
@@ -766,26 +766,26 @@ Erros comuns
 </details>
 <br/>
 
-**Pedido** - Criação de um novo pedido e listagem de pedidos <br/>
+**Order** - Creating a new order and order listing <br/>
 
 <details>
 <summary><b>POST pedido</b></summary>
 
-Criar um pedido.
+Create a order.
 
 **Request**
 
-| **Nome**           | **Obrigatório** | **Tipo** | **Descrição**                             |
+| **Name**           | **Mandatory**   | **Type** | **Description**                           |
 | :----------------- | :-------------- | :------- | :---------------------------------------- |
-| cliente_id         | sim             | `number` | Id do cliente                             |
-| observacao         | não             | `string` | Observação para o pedido                  |
-| pedido_produtos    | sim             | `array`  | Array com produtos relacionados ao pedido |
-| produto_id         | sim             | `number` | Id do produto                             |
-| quantidade_produto | sim             | `number` | Quantidade de itens do produto            |
+| cliente_id         | yes             | `number` | Customer ID                               |
+| observacao         | no              | `string` | Note for order                            |
+| pedido_produtos    | yes             | `array`  | Array with products related to the order  |
+| produto_id         | yes             | `number` | Product ID                                |
+| quantidade_produto | yes             | `number` | Quantity of product items                 |
 
-> **_NOTA:_** É necessário enviar Token JWT via Authorization Header.
+> **_NOTA:_** It is necessary to send JWT Token via Authorization Header.
 
-Exemplo de requisição:
+Request example:
 
 ```json
 {
@@ -806,7 +806,7 @@ Exemplo de requisição:
 
 **Response**
 
-Sucesso
+Success
 
 ```json
 {
@@ -835,7 +835,7 @@ Sucesso
 }
 ```
 
-`status: 201` <br /><br /> Erros comuns
+`status: 201` <br /><br /> Common Errors
 
 ```json
 {
@@ -866,23 +866,23 @@ Sucesso
 <details>
 <summary><b>GET pedido</b></summary>
 
-Listar pedidos. Pode ser passado um parâmetro query `cliente_id` para listar apenas os pedidos de um cliente específico.
+List orders. A query parameter `cliente_id` can be passed to list only orders from a specific client.
 
 **Request**
 
-| **Nome**   | **Obrigatório** | **Tipo** | **Descrição**                             |
+| **Name**   | **Mandatory**   | **Type** | **Description**                           |
 | :--------- | :-------------- | :------- | :---------------------------------------- |
-| cliente_id | não             | `number` | **Enviar via parâmetro de query na rota** |
+| cliente_id | no              | `number` | **Send via query parameter in the route** |
 
-> **_NOTA:_** É necessário enviar Token JWT via Authorization Header.
+> **_NOTA:_** It is necessary to send JWT Token via Authorization Header.
 
-Exemplo de requisição:
+Request example:
 
 `url/pedido?cliente_id=1`
 
 **Response**
 
-Sucesso
+Success
 
 ```json
 [
@@ -939,7 +939,7 @@ Sucesso
 
 `status: 200`
 
-Sucesso sem retorno
+Success without return
 
 ```json
 []
@@ -949,25 +949,25 @@ Sucesso sem retorno
 
 </details>
 
-## 5. 💻 Tecnologias usadas
+## 5. 💻 Technologies used
 
-Languages, Frameworks & Librarys:  
+Languages, Frameworks & Librarys:
 ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![Node](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white) ![JSON](https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white) ![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white) ![NPM](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white) ![ESLint](https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white) ![Prettier](https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E) ![Nodemon](https://img.shields.io/badge/NODEMON-%23323330.svg?style=for-the-badge&logo=nodemon&logoColor=%BBDEAD) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
-Organization:  
+Organization:
 ![Trello](https://img.shields.io/badge/Trello-0052CC?style=for-the-badge&logo=trello&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
-Tests:  
+Tests:
 ![Insomnia](https://img.shields.io/badge/Insomnia-5849be?style=for-the-badge&logo=Insomnia&logoColor=white) ![Jest](https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white)
 
-Database:  
+Database:
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 
-IDE:  
+IDE:
 ![VSCode](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
 
-## 6. 👨‍💻 Autores
+## 6. 👨‍💻 Authors
 
-Criado por [Daniel M. Justo](https://www.linkedin.com/in/danielmjusto/), [Matheus O. da Silva](https://www.linkedin.com/in/matheusdevbackend/), [Ney H. M. Ribeiro](https://www.linkedin.com/in/neyhiwerson/), [Raimundo F. da Silva Neto](https://www.linkedin.com/in/raimundo-ferreira-silva-neto/), [Ricardo J. S. Barbosa](https://www.linkedin.com/in/ricardo-santos-barbosa1/).
+Created by [Daniel M. Justo](https://www.linkedin.com/in/danielmjusto/), [Matheus O. da Silva](https://www.linkedin.com/in/matheusdevbackend/), [Ney H. M. Ribeiro](https://www.linkedin.com/in/neyhiwerson/), [Raimundo F. da Silva Neto](https://www.linkedin.com/in/raimundo-ferreira-silva-neto/), [Ricardo J. S. Barbosa](https://www.linkedin.com/in/ricardo-santos-barbosa1/).
 
-Obrigado pela visita!
+Thanks for the visit!
